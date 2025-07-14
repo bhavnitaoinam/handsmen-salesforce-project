@@ -50,13 +50,15 @@ handsmen-salesforce-project/
 ├── force-app/
 │ └── main/
 │ └── default/
-│ ├── objects/
 │ ├── classes/
+│ ├── objects/
 │ ├── flows/
 │ ├── triggers/
 │ └── email/
 ├── manifest/
 │ └── package.xml
+├── README.md
+└── sfdx-project.json
 
 ---
 
