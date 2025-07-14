@@ -42,4 +42,25 @@ A Salesforce Lightning application designed for **HandsMen Threads**, a premium 
 | Email Templates | Custom notifications                   |
 | Git & GitHub    | Version control and collaboration      |
 
+---
 
+## Project Structure
+
+handsmen-salesforce-project/
+├── force-app/
+│ └── main/
+│ └── default/
+│ ├── objects/
+│ ├── classes/
+│ ├── flows/
+│ ├── triggers/
+│ └── email/
+├── manifest/
+│ └── package.xml
+
+---
+
+## Author
+
+Bhavnita Oinam  
+[GitHub](https://github.com/bhavnitaoinam)
