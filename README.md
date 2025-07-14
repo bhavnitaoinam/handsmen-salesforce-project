@@ -1,18 +1,61 @@
-# Salesforce DX Project: Next Steps
+# HandsMen Threads: Elevating the Art of Sophistication in Men's Fashion – Salesforce DX Project
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A Salesforce Lightning application designed for **HandsMen Threads**, a premium men's fashion brand. This project streamlines business operations with customized data modeling, Apex automation, and intelligent workflows — enhancing customer experience, order management, and inventory control.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Features Implemented
 
-## Configure Your Salesforce DX Project
+### Custom Objects
+- **HandsMen_Customer__c**: Tracks customer info, loyalty status, and purchase history
+- **HandsMen_Product__c**: Manages product catalog, pricing, and stock
+- **HandsMen_Order__c**: Stores order data including status and total amount
+- **Inventory__c**: Monitors stock levels and warehouse location
+- **Marketing_Campaign__c**: Records campaign details with start and end dates
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+### Automation & Flows
+- **Order Confirmation Email Alert**  
+  Sends confirmation email to customer upon order approval
+- **Low Stock Alert Flow**  
+  Triggers an alert email to the inventory manager when stock < 5
+- **Loyalty Status Scheduler**  
+  A scheduled flow updates customer loyalty tier (Gold/Silver/Bronze) based on total purchases
 
-## Read All About It
+### Apex Logic
+- `InventoryBatchJob` — for scheduled inventory syncing (example async job)
+- Validation Rules, Record-Triggered Flows, and Apex Triggers for data integrity
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+### Email Templates
+- **Order Confirmation Email**
+- **Low Stock Alert**
+- **Loyalty Program Status Update**
+
+---
+
+## 🛠Tech Stack
+
+| Tool            | Purpose                                |
+|-----------------|----------------------------------------|
+| Salesforce DX   | Project structure and metadata management |
+| Apex            | Business logic and triggers            |
+| Flows           | Declarative automation                 |
+| Email Templates | Custom notifications                   |
+| Git & GitHub    | Version control and collaboration      |
+
+---
+
+## Project Structure
+
+handsmen-salesforce-project/
+├── force-app/
+│ └── main/
+│ └── default/
+│ ├── classes/
+│ ├── objects/
+│ ├── flows/
+│ ├── triggers/
+│ └── email/
+├── manifest/
+│ └── package.xml
+├── README.md
+└── sfdx-project.json
