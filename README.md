@@ -32,7 +32,7 @@ A Salesforce Lightning application designed for **HandsMen Threads**, a premium 
 
 ---
 
-## 🛠Tech Stack
+## Tech Stack
 
 | Tool            | Purpose                                |
 |-----------------|----------------------------------------|
@@ -41,24 +41,6 @@ A Salesforce Lightning application designed for **HandsMen Threads**, a premium 
 | Flows           | Declarative automation                 |
 | Email Templates | Custom notifications                   |
 | Git & GitHub    | Version control and collaboration      |
-
----
-
-## Project Structure
-
-handsmen-salesforce-project/
-├── force-app/
-│ └── main/
-│ └── default/
-│ ├── classes/
-│ ├── objects/
-│ ├── flows/
-│ ├── triggers/
-│ └── email/
-├── manifest/
-│ └── package.xml
-├── README.md
-└── sfdx-project.json
 
 ---
 
