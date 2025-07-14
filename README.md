@@ -44,18 +44,4 @@ A Salesforce Lightning application designed for **HandsMen Threads**, a premium 
 
 ---
 
-## Project Structure
-
-handsmen-salesforce-project/
-├── force-app/
-│ └── main/
-│ └── default/
-│ ├── classes/
-│ ├── objects/
-│ ├── flows/
-│ ├── triggers/
-│ └── email/
-├── manifest/
-│ └── package.xml
-├── README.md
-└── sfdx-project.json
+<pre lang="text"><code> ## Project Structure ``` handsmen-salesforce-project/ ├── force-app/ │ └── main/ │ └── default/ │ ├── classes/ │ ├── objects/ │ ├── flows/ │ ├── triggers/ │ └── email/ ├── manifest/ │ └── package.xml ├── README.md └── sfdx-project.json ``` </code></pre>
